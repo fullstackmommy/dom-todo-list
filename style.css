@@ -14,6 +14,12 @@ ul {
 	padding: 0;
 }
 
+li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 ul li span {
 	padding: 1rem 0;
 }
@@ -30,5 +36,8 @@ input[type=text] {
   }
 
 .trash {
-	font-color = red;
+	font-size: 50%;
+	color: red;
+	cursor: pointer;
+	
 }
