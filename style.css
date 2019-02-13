@@ -1,5 +1,5 @@
 body {
-	border: 10px solid blue;
+	//border: 10px solid blue;
 	box-sizing: border-box;
 	border-width: 0 1px;
 	font-family: sans-serif;
@@ -8,6 +8,13 @@ body {
 	max-width: 700px;
 	min-height: 100vh;
 	padding: 4rem;
+	background: #bfe9f2;
+}
+
+#container {
+	border: 10px solid blue;
+	padding: 3rem;
+	background: white;
 }
 
 ul {
@@ -37,7 +44,7 @@ input[type=text] {
 
 .trash {
 	font-size: 50%;
-	color: red;
+	//color: red;
 	cursor: pointer;
 	
 }
