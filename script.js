@@ -15,6 +15,7 @@ function displayTasks() {
 	}
 }
 
+
 function addTask(inputTask) {
 	// const ul = document.querySelector('ul');
 	// const li = document.createElement('li');
@@ -30,16 +31,20 @@ function addTask(inputTask) {
 
 	const newInput = document.createElement('span');
 	const newTrash = document.createElement('span');
+	//newTrash.classList.add("trash");
 
 	newInput.textContent = inputTask;
 	newInput.addEventListener('click' , (event) => {
 		newInput.classList.toggle("done");
 	})
 
-	newTrash.textContent = " Remove";
-
 	li.append(newInput, newTrash);
 	ul.appendChild(li);
+
+	newTrash.textContent = " Remove";
+	newTrash.addEventListener('click', (event) => {
+		newInput.parentNode.removeChild(newInput);
+	})
 }
 
 displayTasks();
