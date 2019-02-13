@@ -40,7 +40,7 @@ function addTask(inputTask) {
 	//newTrash.textContent = "Remove";
 	newTrash.innerHTML = "<i class=\"fas fa-trash-alt\"></i>";
 	newTrash.addEventListener('click', (event) => {
-		newTrash.parentNode.classList.add('animated', 'bounceOutLeft');
+		newTrash.parentNode.classList.add('animated', 'bounceOut');
 		newTrash.parentNode.addEventListener('animationend', () => {
 			newTrash.parentNode.remove();
 		})
