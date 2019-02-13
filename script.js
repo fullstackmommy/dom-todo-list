@@ -43,7 +43,7 @@ function addTask(inputTask) {
 
 	newTrash.textContent = " Remove";
 	newTrash.addEventListener('click', (event) => {
-		newTrash.parentNode.removeChild(newTrash);
+		newTrash.parentNode.remove();
 	})
 }
 
